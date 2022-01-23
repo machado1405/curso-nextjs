@@ -1,5 +1,5 @@
 export default function lista() {
-  function retornaSpan(valor) {
+  function retornaSpan(valor = 1) {
     const lista = [];
     for(let i = 1; i <= valor; i++) {
       lista.push(<span>{i},</span>);
@@ -8,7 +8,7 @@ export default function lista() {
   }
   return (
     <>
-      {retornaSpan(10)}
+      {retornaSpan()}
     </>
   );
 }
